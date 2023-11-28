@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PrimeraPreEntrega</title>
-  </head>
-  <body>
-    <h1>GYM ONLINE</h1>
-    <p>El primer Gimnasio en linea para que crees tus propias rutinas</p>
-    <h2>Calculadora del índice de masa corporal (IMC)</h2>
-    <p>
-      El IMC es un criterio ampliamente aceptado pero no es exacto. Clasifica a
-      las personas en infrapeso, peso normal, sobrepeso y obesidad, basándose
-      exclusivamente en la masa del individuo y su altura. No tendría en cuenta
-      la edad, el sexo, el porcentaje de grasa corporal o la masa muscular.
-      Incluso la categorización aún hoy es objeto de debate sobre dónde se
-      deberían colocar esos límites.
-    </p>
 
-    <button onclick="imc()">Calcular IMC</button>
-    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>PrimeraPreEntrega</title>
+</head>
 
-    <h2>Calcular RM</h2>
-    <h3>¿Sabes que es un RM y para que sirve?</h3>
-    <p>
-      RM significa repetición máxima. Así, 1RM sería el peso máximo que podemos
-      levantar una vez en un determinado ejercicio con la técnica perfecta. Es
-      decir, podremos realizar una ejecución perfecta en un determinado
-      ejercicio pero no seremos capaces de realizar dos repeticiones.
+<body>
+  <h1>GYM ONLINE</h1>
+  <p>El primer Gimnasio en linea para que crees tus propias rutinas</p>
+  <h2>Calculadora del índice de masa corporal (IMC)</h2>
+  <p>
+    El IMC es un criterio ampliamente aceptado pero no es exacto. Clasifica a
+    las personas en infrapeso, peso normal, sobrepeso y obesidad, basándose
+    exclusivamente en la masa del individuo y su altura. No tendría en cuenta
+    la edad, el sexo, el porcentaje de grasa corporal o la masa muscular.
+    Incluso la categorización aún hoy es objeto de debate sobre dónde se
+    deberían colocar esos límites.
+  </p>
 
-      Para el calculo de 1 RM nos basamos en la ley de Epley (1995) 1RM = peso levantado x (1+ n ú mero
-      de reps/30 ). 
-      <ol>Ejemplo:</ol>
-      <li>1RM = 50kg x (1+ 12reps/30)</li>
-      <li>1RM= 50g x 1,4</li>
-      <li>1RM= 70</li>
-    </p>
-    <button onclick="rm()">Calcular RM</button>
+  <button onclick="imc()">Calcular IMC</button>
 
-    <script src="./js/calculadoraIMC.js"></script>
-    <script src="./js/calculadoraRM.js"></script>
-  </body>
+
+  <h2>Calcular RM</h2>
+  <h3>¿Sabes que es un RM y para que sirve?</h3>
+  <p>
+    RM significa repetición máxima. Así, 1RM sería el peso máximo que podemos
+    levantar una vez en un determinado ejercicio con la técnica perfecta. Es
+    decir, podremos realizar una ejecución perfecta en un determinado
+    ejercicio pero no seremos capaces de realizar dos repeticiones.
+
+    Para el calculo de 1 RM nos basamos en la ley de Epley (1995) 1RM = peso levantado x (1+ n ú mero
+    de reps/30 ).
+  <ol>Ejemplo:</ol>
+  <li>1RM = 50kg x (1+ 12reps/30)</li>
+  <li>1RM= 50g x 1,4</li>
+  <li>1RM= 70</li>
+  </p>
+  <button onclick="rm()">Calcular RM</button>
+
+  <h2>A continuacion pordra obtener una rutina especialmente armada para usted segun sus objetivos de entrenamientos
+  </h2>
+  <button onclick="rutinas()">Obtené tu rutina</button>
+
+
+
+  <script src="./js/calculadoraIMC.js"></script>
+  <script src="./js/calculadoraRM.js"></script>
+  <script src="./js/rutinas.js"></script>
+</body>
+
 </html>
